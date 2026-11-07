@@ -3,33 +3,223 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#090A0B">
+  <meta name="description" content="Výber digitálnych projektov zameraných na webový dizajn, používateľskú skúsenosť a praktické digitálne riešenia.">
+  <title>Digitálne portfólio — dizajn a riešenia</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#domov" aria-label="Digitálne portfólio, úvod">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">digital<span class="brand-dot">.</span></span>
+      </a>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+      <nav class="desktop-nav" aria-label="Hlavná navigácia">
+        <a href="#projekty">Projekty</a>
+        <a href="#pristup">Prístup</a>
+        <a href="#zameranie">Zameranie</a>
+        <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+      </nav>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
+      <details class="mobile-menu">
+        <summary aria-label="Otvoriť navigáciu"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Mobilná navigácia">
+          <a href="#projekty">Projekty</a>
+          <a href="#pristup">Prístup</a>
+          <a href="#zameranie">Zameranie</a>
+          <a href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+        </nav>
+      </details>
     </div>
+  </header>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+  <main id="obsah">
+    <section class="hero section-shell" id="domov" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DIGITÁLNE PORTFÓLIO <span class="eyebrow-divider">/</span> 2026</p>
+          <h1 id="hero-title">Digitálne produkty<br>navrhnuté s <span class="text-muted">jasným zámerom.</span></h1>
+          <p class="hero-description">Tvorba digitálnych riešení a webových projektov, ktoré spájajú premyslený dizajn, potreby používateľov a zrozumiteľnú funkciu.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projekty">Pozrieť projekty <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Prehľad troch oblastí digitálneho návrhu" role="img">
+          <div class="art-topline"><span>WORK / 001—003</span><span>DESIGN SYSTEMS</span></div>
+          <div class="art-grid" aria-hidden="true">
+            <div class="art-axis art-axis-top"><span>USER</span><span>01</span></div>
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-core"><span class="core-ring"></span><span class="core-center"></span></div>
+            <span class="art-node node-one"></span>
+            <span class="art-node node-two"></span>
+            <span class="art-node node-three"></span>
+            <span class="art-cross cross-one">+</span>
+            <span class="art-cross cross-two">+</span>
+            <div class="art-caption">IDEA <span>→</span> INTERFACE <span>→</span> IMPACT</div>
+          </div>
+          <div class="art-bottomline"><span>INFORMÁCIA / FORMA / FUNKCIA</span><span>48° 09' N</span></div>
+        </div>
+      </div>
+      <div class="container hero-footnote"><span>VÝBER PRÁCE</span><span>01 — 03</span></div>
+    </section>
+
+    <section class="projects section-shell" id="projekty" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 <span class="eyebrow-divider">/</span> VÝBER PRÁCE</p>
+            <h2 id="projects-title">Projekty s jasným<br>účelom<span class="brand-dot">.</span></h2>
+          </div>
+          <p class="section-intro">Od prvého konceptu po premyslený digitálny zážitok. Každý projekt začína pochopením problému.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-fixora">
+            <div class="project-visual visual-hardware" aria-hidden="true">
+              <div class="visual-label"><span>FIXORA / SERVICE</span><span>01</span></div>
+              <div class="hardware-layout">
+                <div class="hardware-device">
+                  <div class="device-fan"><span></span></div>
+                  <div class="device-lines"><i></i><i></i><i></i></div>
+                  <span class="device-light"></span>
+                </div>
+                <div class="hardware-readout"><span>DIAGNOSTIKA</span><strong>98<span>%</span></strong><div class="readout-rule"><i></i></div><small>SYSTÉM V ROVNOVÁHE</small></div>
+              </div>
+              <div class="visual-coordinate">PC / CLEAN / CARE</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>WEBOVÝ DIZAJN</span><span>2026</span></div>
+              <h3>FIXORA PC</h3>
+              <p>Návrh webovej stránky pre servis a čistenie počítačov s dôrazom na dôveru, prehľadnosť služieb a jednoduchý kontakt.</p>
+              <details class="project-details">
+                <summary>Detail projektu <span aria-hidden="true">↗</span></summary>
+                <p>Digitálna prezentácia servisných služieb: jasná navigácia, zrozumiteľné vysvetlenie priebehu opravy a priame cesty k objednávke.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card project-fitness">
+            <div class="project-visual visual-research" aria-hidden="true">
+              <div class="visual-label"><span>MEMBER / INSIGHTS</span><span>02</span></div>
+              <div class="research-layout">
+                <div class="research-score"><span>CELKOVÁ SPOKOJNOSŤ</span><strong>8.6<small>/ 10</small></strong><span class="score-change">+12.4% <i>↗</i></span></div>
+                <div class="research-chart"><div class="chart-bars"><i style="--bar: 38%"></i><i style="--bar: 54%"></i><i style="--bar: 47%"></i><i style="--bar: 72%"></i><i style="--bar: 64%"></i><i style="--bar: 88%"></i><i style="--bar: 76%"></i><i style="--bar: 100%"></i></div><div class="chart-months"><span>JAN</span><span>MAR</span><span>MÁJ</span><span>JÚL</span></div></div>
+              </div>
+              <div class="visual-coordinate">SPRÁVANIE / SPOKOJNOSŤ</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>POUŽÍVATEĽSKÝ VÝSKUM</span><span>2026</span></div>
+              <h3>Marketingový výskum fitness centra</h3>
+              <p>Analýza spokojnosti zákazníkov a používateľského správania na podporu lepšej zákazníckej skúsenosti.</p>
+              <details class="project-details">
+                <summary>Detail projektu <span aria-hidden="true">↗</span></summary>
+                <p>Výskumný rámec prepája spätnú väzbu zákazníkov s ich návykmi a pomáha určiť, ktoré časti služby majú najväčší priestor na zlepšenie.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card project-digital">
+            <div class="project-visual visual-transformation" aria-hidden="true">
+              <div class="visual-label"><span>DIGITAL / ROADMAP</span><span>03</span></div>
+              <div class="roadmap-layout">
+                <div class="roadmap-stage"><span class="stage-number">01</span><span class="stage-dot"></span><div><strong>MAPOVANIE</strong><small>Procesy a potreby</small></div></div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-stage active-stage"><span class="stage-number">02</span><span class="stage-dot"></span><div><strong>NÁVRH</strong><small>Možnosti riešenia</small></div></div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-stage"><span class="stage-number">03</span><span class="stage-dot"></span><div><strong>TRANSFORMÁCIA</strong><small>Plán zavedenia</small></div></div>
+              </div>
+              <div class="visual-coordinate">ANALÝZA / STRATÉGIA</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>DIGITÁLNA STRATÉGIA</span><span>2026</span></div>
+              <h3>Digitálna transformácia podniku</h3>
+              <p>Návrh a analýza digitálnych riešení, ktoré zjednodušujú procesy a vytvárajú priestor pre ďalší rozvoj.</p>
+              <details class="project-details">
+                <summary>Detail projektu <span aria-hidden="true">↗</span></summary>
+                <p>Prehľad súčasných procesov, identifikácia príležitostí a návrh postupných krokov k užitočným digitálnym nástrojom.</p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section-shell" id="pristup" aria-labelledby="approach-title">
+      <div class="container approach-layout">
+        <div class="approach-heading">
+          <p class="eyebrow">02 <span class="eyebrow-divider">/</span> PRÍSTUP</p>
+          <h2 id="approach-title">Dobré riešenie<br>začína <span class="text-muted">porozumením.</span></h2>
+        </div>
+        <div class="approach-content">
+          <p class="approach-lead">Dizajn nie je len povrch. Je to spôsob, akým sa potreba mení na zrozumiteľný a užitočný produkt.</p>
+          <p>Každý návrh vychádza z potrieb používateľov a jasnej informačnej architektúry. Od prvých scenárov cez prototypovanie až po testovanie vzniká riešenie, ktoré má svoj dôvod aj smer.</p>
+          <div class="approach-steps" aria-label="Postup návrhu">
+            <span><i>01</i> Pochopiť</span><b aria-hidden="true">/</b>
+            <span><i>02</i> Navrhnúť</span><b aria-hidden="true">/</b>
+            <span><i>03</i> Overiť</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus section-shell" id="zameranie" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="section-heading focus-heading">
+          <div>
+            <p class="eyebrow">03 <span class="eyebrow-divider">/</span> ZAMERANIE</p>
+            <h2 id="focus-title">Od nápadu<br>k použiteľnému produktu<span class="brand-dot">.</span></h2>
+          </div>
+          <p class="section-intro">Premyslený dizajn a poznatky z výskumu premieňajú zložité zadania na jasné digitálne skúsenosti.</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-item"><span class="focus-index">01</span><div class="focus-symbol symbol-layout" aria-hidden="true"><i></i><i></i><i></i></div><h3>Webový dizajn</h3><p>Prehľadné rozhrania a digitálna prezentácia so zmyslom pre detail.</p><span class="focus-arrow" aria-hidden="true">↗</span></article>
+          <article class="focus-item"><span class="focus-index">02</span><div class="focus-symbol symbol-prototype" aria-hidden="true"><i></i><i></i><i></i></div><h3>UX a prototypovanie</h3><p>Premyslené používateľské cesty od prvého náčrtu po overiteľný prototyp.</p><span class="focus-arrow" aria-hidden="true">↗</span></article>
+          <article class="focus-item"><span class="focus-index">03</span><div class="focus-symbol symbol-research" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Analýza používateľov</h3><p>Výskum potrieb a správania, ktorý pomáha robiť lepšie rozhodnutia.</p><span class="focus-arrow" aria-hidden="true">↗</span></article>
+          <article class="focus-item"><span class="focus-index">04</span><div class="focus-symbol symbol-digital" aria-hidden="true"><i></i><i></i><i></i></div><h3>Digitálne riešenia</h3><p>Praktické nápady a stratégia pre užitočné digitálne služby a procesy.</p><span class="focus-arrow" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="kontakt" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">04 <span class="eyebrow-divider">/</span> KONTAKT</p>
+          <h2 id="contact-title">Máte projekt<br>na <span class="text-muted">dobrej ceste?</span></h2>
+        </div>
+        <div class="contact-copy">
+          <p>Každý dobrý projekt sa začína rozhovorom. Napíšte pár slov o svojom zámere a môžeme sa pozrieť na ďalší krok.</p>
+          <a class="button button-primary contact-button" href="mailto:?subject=Spolupr%C3%A1ca%20na%20digit%C3%A1lnom%20projekte">Napísať správu <span aria-hidden="true">↗</span></a>
+          <span class="contact-note">Otvorí sa váš e-mailový klient.</span>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#domov" aria-label="Digitálne portfólio, späť na začiatok">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">digital<span class="brand-dot">.</span></span>
+      </a>
+      <p>Výber digitálnych projektov<br>a premyslených riešení.</p>
+      <nav class="footer-nav" aria-label="Navigácia v pätičke">
+        <a href="#projekty">Projekty</a>
+        <a href="#pristup">Prístup</a>
+        <a href="#zameranie">Zameranie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Digitálne portfólio. Všetky práva vyhradené.</span><a href="#domov">SPÄŤ NAHOR <span aria-hidden="true">↑</span></a></div>
+  </footer>
 </body>
 </html>
