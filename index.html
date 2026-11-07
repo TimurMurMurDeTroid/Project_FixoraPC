@@ -25,7 +25,7 @@
         <a href="#projekty">Projekty</a>
         <a href="#pristup">Prístup</a>
         <a href="#zameranie">Zameranie</a>
-        <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+        <a class="nav-contact" href="#kontakt-form">Kontakt <span aria-hidden="true">↗</span></a>
       </nav>
 
       <details class="mobile-menu">
@@ -34,7 +34,7 @@
           <a href="#projekty">Projekty</a>
           <a href="#pristup">Prístup</a>
           <a href="#zameranie">Zameranie</a>
-          <a href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+          <a href="#kontakt-form">Kontakt <span aria-hidden="true">↗</span></a>
         </nav>
       </details>
     </div>
@@ -49,7 +49,7 @@
           <p class="hero-description">Tvorba digitálnych riešení a webových projektov, ktoré spájajú premyslený dizajn, potreby používateľov a zrozumiteľnú funkciu.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projekty">Pozrieť projekty <span aria-hidden="true">↘</span></a>
-            <a class="button button-secondary" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#kontakt-form">Kontakt <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -198,8 +198,22 @@
         </div>
         <div class="contact-copy">
           <p>Každý dobrý projekt sa začína rozhovorom. Napíšte pár slov o svojom zámere a môžeme sa pozrieť na ďalší krok.</p>
-          <a class="button button-primary contact-button" href="mailto:?subject=Spolupr%C3%A1ca%20na%20digit%C3%A1lnom%20projekte">Napísať správu <span aria-hidden="true">↗</span></a>
-          <span class="contact-note">Otvorí sa váš e-mailový klient.</span>
+          <form class="contact-form" id="kontakt-form">
+            <div class="form-field">
+              <label for="contact-name">Meno</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">E-mail</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Správa</label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="button button-primary contact-button" type="submit">Odoslať správu</button>
+            <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite" hidden></p>
+          </form>
         </div>
       </div>
     </section>
@@ -216,10 +230,18 @@
         <a href="#projekty">Projekty</a>
         <a href="#pristup">Prístup</a>
         <a href="#zameranie">Zameranie</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#kontakt-form">Kontakt</a>
       </nav>
     </div>
     <div class="container footer-bottom"><span>© 2026 Digitálne portfólio. Všetky práva vyhradené.</span><a href="#domov">SPÄŤ NAHOR <span aria-hidden="true">↑</span></a></div>
   </footer>
+  <script>
+    document.querySelector("#kontakt-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const status = document.querySelector("#contact-form-status");
+      status.textContent = "Tento kontaktný formulár je ukážkový a správy sa neodosielajú.";
+      status.hidden = false;
+    });
+  </script>
 </body>
 </html>
